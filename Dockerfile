@@ -1,5 +1,5 @@
-# Étape 1: Utiliser une image avec Maven pour construire le projet
-FROM maven:3.6.3-jdk-17 as builder
+# Étape 1: Utiliser une image avec Maven et JDK pour construire le projet
+FROM matderosa/maven-3.8-openjdk-17-gcc8.5 as builder
 
 # Copier les fichiers sources dans l'image
 COPY src /usr/src/app/src
